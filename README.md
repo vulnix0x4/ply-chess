@@ -1,5 +1,7 @@
 # Ply — a complete chess platform in the browser
 
+**Live:** https://ply-chess.lukewhaley.workers.dev
+
 Ply is a chess engine and playing/analysis interface written from scratch in TypeScript. Everything runs client-side; the engine lives in a Web Worker.
 
 ## Run it
@@ -11,6 +13,7 @@ pnpm test       # perft, notation, PGN and search test suites
 pnpm perft      # perft against the standard reference positions
 pnpm bench 10   # fixed-depth engine benchmark
 pnpm build      # production build in dist/
+pnpm deploy     # build and deploy to Cloudflare Workers (static assets)
 ```
 
 ## Engine (`src/engine`)
